@@ -1,0 +1,570 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.nav{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 0 8px rgba(50,50,50,0.5);
+    background-color: #2fad66;
+}
+
+.items{
+    width: calc(100% - 55px);
+    display:grid;
+    grid-template-columns: 22% 15% 22% 22% 22%;
+}
+
+.item{
+    text-align: center;
+}
+
+.divlogonombre{
+    display:grid;
+    grid-template-columns: 15% 85%;
+}
+
+.logo{
+    width: 50px;
+    color:white;
+}
+
+.logocovid{
+    width:150px;
+}
+
+.item a{
+    color:white;
+    text-decoration: none;
+}
+
+.item:hover{
+    transition: 0.5s;
+    background-color: #278a52;
+}
+
+.item-text-nombre{
+    padding:10px;
+    line-height: 28px;
+}
+
+.item-text{
+    padding-top:10px;
+    line-height: 28px;
+}
+
+.menu{
+    padding:10px;
+    width: 35px;
+    box-shadow: 0 0 8px rgba(50,50,50,0.5);
+    display:none;
+}
+
+.main-content{
+    box-shadow: 0 0 8px rgba(50,50,50,0.5);
+}
+
+.main-menu{
+    background-color: #2fad66;
+}
+
+.icono-menu{
+    width:100%;
+    cursor: pointer;
+    overflow: hidden;
+    height: 28px;
+}
+
+.barra-menu{
+    width:100%;
+    height:6px;
+    border-radius: 2px;
+    transition: 0.5s;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.barra-menu:nth-child(1),
+.barra-menu:nth-child(2){
+    margin-bottom: 5px;
+}
+
+.main-content{
+    position:fixed;
+    top:50px;
+    left: 0;
+    width:100%;
+    background-color: #fefefe;
+}
+
+.main-menu{
+    transition:0.5s;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+#check-menu{
+    display:none;
+}
+
+#check-menu:checked + label .main-content .main-menu{
+    opacity: 1;
+    height: auto;
+}
+
+#check-menu:checked + label .icono-menu .barra-menu{
+    margin:0;
+}
+
+#check-menu:checked + label .icono-menu .barra-menu:nth-child(1){
+    transform: rotate(45deg) translate(8px,9px);
+}
+
+#check-menu:checked + label .icono-menu .barra-menu:nth-child(2){
+    transform: translate(-50px);
+}
+
+#check-menu:checked + label .icono-menu .barra-menu:nth-child(3){
+    transform: rotate(-45deg);
+}
+
+/************************section*******************/
+
+.section{
+    width:100%;
+    background: url(../imagenes/Foto%20de%20Lum3n%20en%20Pexels.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+}
+
+.logosection{
+    width:180px;
+    height: 180px;
+    padding-top: 90px;
+}
+
+/*************plandeaccion*****/
+
+.plandeaccion{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding:50px 20px;
+}
+
+.tituloplandeaccion{
+    color:#88a713;
+}
+
+p{
+    padding:5px;
+}
+
+.classpda{
+    background: url(../imagenes/logo-hero.jpg);
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.textopda{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+/**********************especialidades*****************/
+
+.servicios{
+    padding:100px 0;
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+h3{
+    color:#2fad66;
+    font-size: 18px;
+}
+
+.divem4y4{
+    display:grid;
+    grid-template-rows:50% 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.divem2y2{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.divsem{
+    display:grid;
+    grid-template-rows: 80% 20%;
+    justify-content: center;
+    padding:50px;
+}
+
+.circulo{
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #2fad66;
+    margin:auto;
+}
+
+.iconos{
+    font-size:60px;
+    color:white;
+    margin-top:20px;
+}
+
+/********************peluqueria canina*******/
+
+.titulopeluqueriacanina{
+    color:#88a713;
+    padding:5px;
+}
+
+p{
+    padding:5px;
+}
+
+.peluqueriacanina{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding:50px 20px;
+}
+
+.classpc{
+    background: url(../imagenes/peluqueriacanina.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.textopc{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.ventasdeaccesorios{
+    display:grid;
+    grid-template-rows: 30% 70%;
+    padding:50px;
+}
+
+.ventasdeaccesorios h2{
+    text-align: center;
+    color:#2fad66;
+    padding:5px;
+}
+
+/***********contacto*********/
+
+.contacto{
+    background-color:#88a713;
+    color:white;
+    text-align: center;
+    padding-top:100px;
+    padding-bottom: 50px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.infocontacto{
+    margin-top:50px;
+    padding-bottom: 50px;
+}
+
+.correo{
+    cursor: pointer;
+    color:white;
+    text-decoration: none;
+}
+
+form{
+    width: calc(100% - 50px);
+    margin: auto;
+}
+
+input, textarea{
+    width:calc(100% - 160px);
+    margin: 10px;
+    padding:5px;
+    border-radius: 5px;
+    border:none;
+}
+
+textarea{
+    min-width:calc(100% - 160px);
+    max-width:calc(100% - 160px);
+    min-height:50px;
+    max-height:100px;
+
+}
+
+.botonenviar{
+    background-color: #2fad66;
+    color:white;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    width:50%;
+}
+
+.botonenviar:hover{
+    transition: 0.5s;
+    background-color: #278a52;
+}
+
+/************mapa****************/
+
+.maps iframe{
+    width:100%;
+    height:500px;
+}
+
+/************copyright********/
+
+.copyright{
+    background-color: #2fad66;
+    color:white;
+    height:50px;
+    text-align: center;
+    padding-top:auto;
+    padding-bottom:auto;
+}
+
+/************botontelefono*****/
+
+.botontelefono{
+    width:80px;
+    height: 80px;
+    position:fixed;
+    border-radius: 20px;
+    background-color: #3ce15a;
+    bottom:122px;
+    right:12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.iconotelefono{
+    padding:10px;
+    font-size:60px;
+    color:white;
+}
+
+@media(max-width:1300px){
+
+    .menu{
+        display:block;
+    }
+
+    .item-text{
+        display:none;
+    }
+
+    .item-text-responsive{
+        padding:20px 50px;
+    }
+
+
+    .nav{
+        grid-template-columns:95% 5%;
+    }
+
+    .items{
+        grid-template-columns: 25% 25% 50%;
+    }
+
+    .colnav1{
+        grid-template-columns:4% 96%;
+    }
+    .colnav2{
+        display:none;
+    }
+
+    .divmenuresponsive{
+        display:block;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .divmenuresponsive:hover{
+        background-color: #88a713;
+    }
+
+    .menuresponsive{
+        font-size: 50px;
+    }
+
+    .xresponsive{
+        font-size: 50px;
+        display:none;
+    }
+
+    .divem4y4{
+        padding:0 100px;
+    }
+}
+
+@media(max-width:1200px){
+    .classpda{
+        height: 150px;
+    }
+}
+
+@media(max-width:1150px){
+    .nav{
+        grid-template-columns:94% 6%;
+    }
+
+    .items{
+        grid-template-columns: 30% 30% 40%;
+    }
+
+    .plandeaccion{
+        grid-template-columns: 100%;
+    }
+
+    .classpda{
+        height: 200px;
+    }
+    
+    .textopda{
+        padding-top:50px;
+    }
+
+    .especialidades{
+        padding:50px 70px;
+    }
+}
+
+@media(max-width:1000px){
+    .nav{
+        grid-template-columns:93% 7%;
+    }
+
+    .items{
+        grid-template-columns: 35% 35% 30%;
+    }
+
+    .especialidades{
+        padding:50px 100px;
+    }
+}
+
+@media(max-width:850px){
+    .nav{
+        grid-template-columns:92% 8%;
+    }
+
+    .items{
+        grid-template-columns: 50% 50%;
+    }
+
+    .colnav1{
+        grid-template-columns:5% 95%;
+    }
+
+    .classpda{
+        height: 170px;
+    }
+
+    .servicios{
+        grid-template-columns: 100%;
+    }
+
+    .peluqueriacanina{
+        grid-template-columns: 100%;
+    }
+
+    .contacto{
+        grid-template-columns: 100%;
+    }
+}
+
+@media(max-width:700px){
+    .nav{
+        grid-template-columns:91% 9%;
+    }
+
+    .items{
+        grid-template-columns: 60% 40%;
+    }
+
+    .colnav1{
+        grid-template-columns:6% 94%;
+    }
+    
+    .classpda{
+        height: 130px;
+    }
+
+    .direccion{
+        padding-left:100px;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width:550px){
+    .nav{
+        grid-template-columns:88% 12%;
+    }
+
+    .items{
+        grid-template-columns: 70% 30%;
+    }
+
+    .colnav1{
+        grid-template-columns:8% 92%;
+    }
+
+    .logocovid{
+        width:100px;
+    }
+
+    .classpda{
+        height: 100px;
+    }
+
+    .section{
+        grid-template-columns:100%;
+    }
+}
+
+@media (max-width:450px){
+    .items{
+        grid-template-columns: 80% 20%;
+    }
+
+    .logocovid{
+        width:70px;
+    }
+}
+
+@media (max-width:375px){
+    .logocovid{
+        width:60px;
+    }
+}
+
+
+
+
+
